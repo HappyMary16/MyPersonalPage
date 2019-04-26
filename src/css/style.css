@@ -1,0 +1,27 @@
+.header, .footer{
+    color: black;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+.header {
+    border-top: 1px solid gray;
+    font-size: 1.5em;
+    text-align: center;
+    font-style: italic;
+}
+
+.footer {
+    border-bottom: 1px solid gray;
+    font-size: 1em;
+    text-align: left;
+}
+
+body {
+    background-color: white;
+}
+
+.header, .footer, .main-photo {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
