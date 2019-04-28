@@ -1,27 +1,23 @@
 .header, .footer{
     color: black;
-    background-color: antiquewhite;
     width: 100%;
 }
 
 .header {
-    border-top: 1px solid gray;
-    font-size: 1.5em;
-    text-align: center;
+    background-image: linear-gradient(deepskyblue, white);
     font-style: italic;
 }
 
 .footer {
-    border-bottom: 1px solid gray;
+    background-image: linear-gradient(white, deepskyblue);
     font-size: 1em;
-    text-align: left;
+    text-align: right;
+    height: 3em;
 }
 
+#changeStyle {
+    margin-left: 16em;
+}
 body {
     background-color: white;
-}
-
-.header, .footer, .main-photo {
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
 }
