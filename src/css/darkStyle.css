@@ -1,0 +1,36 @@
+header, footer, body {
+    color: white;
+}
+
+header {
+    font-style: italic;
+}
+
+header, #blockHeader {
+    background-image: linear-gradient(darkblue, black);
+}
+
+footer {
+    background-image: linear-gradient(black, darkblue);
+    font-size: 1em;
+    text-align: right;
+}
+
+body {
+    background-color: black;
+}
+
+.card {
+    border-color: darkgray;
+}
+.card-body {
+    background-color: black;
+}
+
+.card-header {
+    background-color: gray;
+}
+
+#blockHeader {
+    font-size: 1.5em;
+}
