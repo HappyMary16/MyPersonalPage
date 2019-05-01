@@ -6,13 +6,13 @@ function changeStyle() {
     element.setAttribute("rel", "stylesheet");
     element.setAttribute("type", "text/css");
 
-    if (changeStyleButton.value === "light") {
+    if (changeStyleButton.value === "dark") {
 
-        changeStyleButton.value = "dark";
+        changeStyleButton.value = "light";
         element.setAttribute("href", "src/css/darkStyle.css");
     } else {
 
-        changeStyleButton.value = "light";
+        changeStyleButton.value = "dark";
         element.setAttribute("href", "src/css/lightStyle.css");
     }
 

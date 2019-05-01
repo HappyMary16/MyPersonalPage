@@ -13,8 +13,9 @@ footer {
 .card-body {
     height: 3em;
 }
-.block-quote {
-    height: 2em;
+
+#cardQuote {
+    height: 5em;
 }
 
 .blockHeader {

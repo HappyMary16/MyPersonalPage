@@ -1,11 +1,8 @@
-var controls = document.querySelectorAll('.controls');
-for (var i = 0; i < controls.length; i++) {
-    controls[i].style.display = 'inline-block';
-}
-
-var slides = document.querySelectorAll('#slides .slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide, 2000);
+let slides = document.querySelectorAll('#slides .slide');
+let currentSlide = 0;
+let slideInterval = setInterval(nextSlide, 2000);
+let playing = true;
+let pauseButton = document.getElementById('pause');
 
 function nextSlide() {
     goToSlide(currentSlide + 1);
@@ -21,10 +18,6 @@ function goToSlide(n) {
     slides[currentSlide].className = 'slide showing';
 }
 
-
-var playing = true;
-var pauseButton = document.getElementById('pause');
-
 function pauseSlideshow() {
     pauseButton.innerHTML = '&#9658;'; // play character
     playing = false;
@@ -38,20 +31,15 @@ function playSlideshow() {
 }
 
 function pausePlay () {
-    if (playing) {
-        pauseSlideshow();
-    }
-    else {
-        playSlideshow();
-    }
-};
+    playing ? pauseSlideshow() : playSlideshow();
+}
 
 function next() {
     pauseSlideshow();
     nextSlide();
-};
+}
 
 function previous() {
     pauseSlideshow();
     previousSlide();
-};
+}
