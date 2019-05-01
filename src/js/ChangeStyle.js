@@ -1,20 +1,20 @@
-function changeStyle() {
+const styleButton = document.getElementById('changeStyleButton');
 
-    let changeStyleButton = document.getElementById("changeStyleButton");
+styleButton.addEventListener('click',  () => {
 
     let element = document.createElement("link");
     element.setAttribute("rel", "stylesheet");
     element.setAttribute("type", "text/css");
 
-    if (changeStyleButton.value === "dark") {
+    if (styleButton.value === "dark") {
 
-        changeStyleButton.value = "light";
-        element.setAttribute("href", "src/css/darkStyle.css");
+        styleButton.value = "light";
+        element.setAttribute("href", "css/darkStyle.css");
     } else {
 
-        changeStyleButton.value = "dark";
-        element.setAttribute("href", "src/css/lightStyle.css");
+        styleButton.value = "dark";
+        element.setAttribute("href", "css/lightStyle.css");
     }
 
-    document.getElementsByTagName("head")[0].appendChild(element);
-}
+    document.querySelector("head").appendChild(element);
+});

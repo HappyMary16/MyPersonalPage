@@ -1,8 +1,10 @@
+const previousButton = document.getElementById('previous');
+const pauseButton = document.getElementById('pause');
+const nextButton = document.getElementById('next');
 let slides = document.querySelectorAll('#slides .slide');
 let currentSlide = 0;
 let slideInterval = setInterval(nextSlide, 2000);
 let playing = true;
-let pauseButton = document.getElementById('pause');
 
 function nextSlide() {
     goToSlide(currentSlide + 1);
@@ -30,16 +32,16 @@ function playSlideshow() {
     slideInterval = setInterval(nextSlide, 2000);
 }
 
-function pausePlay () {
-    playing ? pauseSlideshow() : playSlideshow();
-}
-
-function next() {
-    pauseSlideshow();
-    nextSlide();
-}
-
-function previous() {
+previousButton.addEventListener('click', () => {
     pauseSlideshow();
     previousSlide();
-}
+});
+
+pauseButton.addEventListener('click', () => {
+    playing ? pauseSlideshow() : playSlideshow();
+});
+
+nextButton.addEventListener('click', () => {
+    pauseSlideshow();
+    nextSlide();
+});
