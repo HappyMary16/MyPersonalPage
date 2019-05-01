@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Моя особиста сторінка</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightStyle.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="col-md-12">
+
+        <header class="row">
+            <h4 class="col text-left">Моя особиста сторінка</h4>
+            <div class="col text-right">
+                <input type="button" id="changeStyleButton" value="light" onclick="changeStyle()"/>
+                <script src="js/ChangeStyle.js"></script>
+            </div>
+        </header>
+
+        <div class="main-photo">
+            <img src="static/mainPhoto.jpg" class="rounded-circle mx-auto d-block" alt="Photo" width="250">
+            <h5 align="center">Бородін Марія</h5>
+            <h6 align="center">m.borodin.1999@gmail.com</h6>
+            <p align="center">Слова про мене</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header">
+                        Улюблена цитата
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="block-quote">
+                            <h5 align="center">Життя - театр, а люди в нім - актори.</h5>
+                            <p align="right">- Вільям Шекспір</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row blockHeader" align="center">
+            <div class="col text-left">
+                <em>Фотографії з різним настроєм</em>
+            </div>
+        </div>
+
+        <div class="row" align="center">
+            <div class="col offset-md-1">
+                <div class="card" style="width: 15em">
+                    <img src="static/differentMood/happy.jpg" class="card-img-top" alt="Happy photo">
+                    <div class="card-body">
+                        <h6 class="card-text" align="center">Весела</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 15em">
+                    <img src="static/differentMood/current.jpg" class="card-img-top" alt="Current photo">
+                    <div class="card-body">
+                        <h6 class="card-text" align="center">В даний момент</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 15em">
+                    <img src="static/differentMood/sad.jpg" class="card-img-top" alt="Sad photo">
+                    <div class="card-body">
+                        <h6 class="card-text" align="center">Сумна</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <div class="row blockHeader" align="center">
+            <div class="col text-left">
+                <em>Мої оцінки</em>
+            </div>
+        </div>
+
+        <div class="row" align="center">
+            <table class="col-md-10 offset-md-1 table table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">Предмет</th>
+                    <th scope="col">Викладач</th>
+                    <th scope="col">Оцінка</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td scope="row">Моделювання складних систем</td>
+                    <td>Мартиненко В. Г.</td>
+                    <td>93</td>
+                </tr>
+                <tr>
+                    <td scope="row">Технології програмування</td>
+                    <td>Дружинін</td>
+                    <td>97</td>
+                </tr>
+                <tr>
+                    <td scope="row">Методи обчислення</td>
+                    <td>Плаксій Ю. А.</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td scope="row">Теорія автоматичного управління</td>
+                    <td>Успенський В. Б.</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td scope="row">Рівняння математичної фізики</td>
+                    <td>Бреславський Д. В.</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td scope="row">Комп'ютерні мережі</td>
+                    <td>Трубаєв О. І.</td>
+                    <td>96</td>
+                </tr>
+                <tr>
+                    <td scope="row">Фізичне виховання</td>
+                    <td>Курій О. В.</td>
+                    <td>100</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="row blockHeader" align="center">
+            <div class="col text-left">
+                <em>Улюблені фільми</em>
+            </div>
+        </div>
+
+        <div class="row" align="center">
+            <div class="col">
+                <div class="card" style="width: 18em">
+                    <img src="static/films/breaking-bad.jpg" class="card-img-top" alt="Breaking Bad (постер)">
+                    <div class="card-body">
+                        <h6 class="card-text" align="center">Breaking Bad</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18em">
+                    <img src="static/films/westworld.jpg" class="card-img-top" alt="Westworld (постер)">
+                    <div class="card-body">
+                        <h6 class="card-text" align="center">Westworld</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18em">
+                    <img src="static/films/Friends.jpg" class="card-img-top" alt="Friends (постер)">
+                    <div class="card-body">
+                        <h6 class="card-text" align="center">Friends</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18em">
+                    <img src="static/films/Deadpool.png" class="card-img-top" alt="Deadpool (постер)">
+                    <div class="card-body">
+                        <h6 class="card-text" align="center">Deadpool</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18em">
+                    <img src="static/films/catBob.jpg" class="card-img-top" alt="Current photo (постер)">
+                    <div class="card-body">
+                        <h6 class="card-text" align="center">Уличный кот по кличке Боб</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18em">
+                    <img src="static/films/americanHistoryX.jpg" class="card-img-top" alt="American History X">
+                    <div class="card-body">
+                        <h6 class="card-text" align="center">American History X</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row blockHeader" align="center">
+            <div class="col text-left">
+                <em>Мій дім</em>
+            </div>
+        </div>
+
+        <div class="row">
+            <button class="controls" id="previous" onclick="previous()">&lt;</button>
+            <button class="controls" id="pause" onclick="pausePlay()">&#10074;&#10074;</button>
+            <button class="controls" id="next" onclick="next()">&gt;</button>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5">
+                <ul id="slides">
+                    <li class="slide showing"><img src="static/myHome/IMG_20180407_153852.jpg" alt="My home"></li>
+                    <li class="slide"><img src="static/myHome/IMG_20180801_205658.jpg" alt="My home"></li>
+                    <li class="slide"><img src="static/myHome/photo_2017-07-20_15-35-32.jpg" alt="My home"></li>
+                    <li class="slide"><img src="static/myHome/photo_2017-07-20_15-35-42.jpg" alt="My home"></li>
+                    <li class="slide"><img src="static/myHome/photo_2018-01-11_12-17-59.jpg" alt="My home"></li>
+                    <li class="slide"><img src="static/myHome/photo_2018-01-20_16-44-21.jpg" alt="My home"></li>
+                    <li class="slide"><img src="static/myHome/photo_2018-07-23_11-49-57.jpg" alt="My home"></li>
+                    <li class="slide"><img src="static/myHome/photo2122.jpg" alt="My home"></li>
+                </ul>
+                <script src="js/SlideShow.js"></script>
+            </div>
+
+            <div class="col aboutHome">
+                <h4>Гензерівка</h4>
+                <p>Село в Яготинському районі Київської області.
+                    <br>
+                    Розміщена на лівому березі річки Гнила Оржиця, на північно-захід від центру сільської ради, села
+                    Лемешівка.
+                    <br>
+                    Займає площу 0,735км<sup>2</sup>.
+                    <br><br>
+                    Село засноване в 1654 році.
+                    <br>
+                    Населення Гензерівки по перепису 2001 року складає 400 осіб.
+                    <br>
+                    Тут народився український вчений, агроном Володимир Григорович Ротмиістров.
+                    <br><br>
+                    Село Гензерівка входить до складу Лемешівської сільської ради.
+                </p>
+            </div>
+        </div>
+
+        <footer class="row">
+            <div class="col text-right">
+                Автор: Бородін Марія
+                <br>
+                Група І-26б
+            </div>
+        </footer>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

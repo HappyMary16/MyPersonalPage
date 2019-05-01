@@ -1,27 +1,21 @@
-header, footer, body {
+header, footer, body, th, td {
     color: black;
 }
 
 header {
-    font-style: italic;
+    background-image: linear-gradient(deepskyblue, white);
 }
 
-header, #blockHeader {
-    background-image: linear-gradient(deepskyblue, white);
+#changeStyleButton {
+    background:url(/static/differentMood/happy.jpg);
 }
 
 footer {
     background-image: linear-gradient(white, deepskyblue);
-    font-size: 1em;
-    text-align: right;
 }
 
 body {
     background-color: white;
-}
-
-.card {
-    border-color: darkgray;
 }
 
 .card-body {
@@ -32,6 +26,18 @@ body {
     background-color: antiquewhite;
 }
 
-#blockHeader {
-    font-size: 1.5em;
+.blockHeader {
+    background-image: linear-gradient(white, deepskyblue, white);
+}
+
+.controls {
+    background: darkgray;
+    color: black;
+    border-color: black;
+}
+
+.controls:hover,
+.controls:focus {
+    background: #333333;
+    color: white;
 }

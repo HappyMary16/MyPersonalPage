@@ -1,0 +1,74 @@
+header {
+    font-style: italic;
+}
+
+footer {
+    font-size: 1em;
+    text-align: right;
+}
+
+.card {
+    border-color: darkgray;
+}
+.card-body {
+    height: 3em;
+}
+.block-quote {
+    height: 2em;
+}
+
+.blockHeader {
+    font-size: 1.5em;
+}
+
+.aboutHome {
+    padding-left: 1em;
+}
+
+#slides {
+    position: relative;
+    height: 21em;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.slide img {
+    width: 25em;
+}
+
+.slide {
+    position: absolute;
+    padding-top: 1em;
+    opacity: 0;
+    z-index: 1;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.controls {
+    padding: 1em;
+    font-size: 1em;
+    cursor: pointer;
+    border: 0.1em solid;
+    margin-left: 1em;
+    width: 4em;
+}
+
+.container {
+    position: relative;
+}
+
+.buttons {
+    position: absolute;
+    z-index: 10;
+    font-size: 0;
+}
