@@ -1,5 +1,6 @@
 header {
     font-style: italic;
+    font-size: 1em;
 }
 
 footer {
@@ -68,8 +69,20 @@ footer {
     position: relative;
 }
 
-.buttons {
-    position: absolute;
-    z-index: 10;
-    font-size: 0;
+@media all and (max-width: 768px) {
+    #slides {
+        height: 17em;
+    }
+
+    .slide img {
+        width: 20em;
+    }
+
+    th, td {
+        font-size: 12px;
+    }
+
+    #cardQuote {
+        height: 6.5em;
+    }
 }
