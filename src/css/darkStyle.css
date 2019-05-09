@@ -2,21 +2,17 @@ header, footer, body, th, td {
     color: white;
 }
 
-header {
-    background-image: linear-gradient(darkblue, black);
-}
-
-#changeStyleButton {
-    background-color: deepskyblue;
-    color: black;
-}
-
-footer {
-    background-image: linear-gradient(black, darkblue);
-}
-
 body {
-    background-color: black;
+    background-image: url("../../static/dark.jpg");
+}
+
+hr {
+    background-color: white;
+    color: white;
+}
+
+table, th, td, tr {
+    border: solid white 0.15em;
 }
 
 .card-body {
@@ -24,11 +20,7 @@ body {
 }
 
 .card-header {
-    background-color: gray;
-}
-
-.blockHeader {
-    background-image: linear-gradient(black, darkblue, black);
+    background-color: dimgray;
 }
 
 .controls {

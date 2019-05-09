@@ -1,16 +1,36 @@
+body {
+    background: no-repeat fixed center center;
+    background-size: cover;
+}
+
 header {
     font-style: italic;
     font-size: 1em;
+    height: 2em;
 }
 
 footer {
     font-size: 1em;
     text-align: right;
+    height: 4em;
 }
 
+hr {
+    border: none;
+    height: 2px;
+}
+
+.main-photo, .card, .table, .controls {
+    margin-top: 0.5em;
+}
+
+.card, .table {
+    margin-bottom: 0.5em;
+}
 .card {
     border-color: darkgray;
 }
+
 .card-body {
     height: 3em;
 }
@@ -61,15 +81,24 @@ footer {
     font-size: 1em;
     cursor: pointer;
     border: 0.1em solid;
+    margin-left: 0.3em;
+    width: 3em;
+    height: 3em;
+}
+
+#previous {
     margin-left: 1em;
-    width: 4em;
 }
 
 .container {
     position: relative;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 540px) {
+    header {
+        height: 4em;
+    }
+
     #slides {
         height: 17em;
     }

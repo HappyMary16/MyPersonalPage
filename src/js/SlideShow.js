@@ -21,13 +21,13 @@ function goToSlide(n) {
 }
 
 function pauseSlideshow() {
-    pauseButton.innerHTML = '&#9658;'; // play character
+    pauseButton.className = "controls fa fa-play";
     playing = false;
     clearInterval(slideInterval);
 }
 
 function playSlideshow() {
-    pauseButton.innerHTML = '&#10074;&#10074;'; // pause character
+    pauseButton.className = "controls fa fa-pause";
     playing = true;
     slideInterval = setInterval(nextSlide, 2000);
 }

@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/lightStyle.css">
@@ -19,13 +20,17 @@
         <header class="row">
             <h4 class="col text-left">Моя особиста сторінка</h4>
             <div class="col text-right">
-                <input type="button" id="changeStyleButton" value="dark"/>
+                <div class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="changeStyleButton" value="dark">
+                    <label class="custom-control-label" for="changeStyleButton"></label>
+                </div>
                 <script src="js/ChangeStyle.js"></script>
             </div>
         </header>
+        <hr/>
 
         <div class="main-photo">
-            <img src="static/mainPhoto.jpg" class="rounded-circle mx-auto d-block" alt="Photo" width="250">
+            <img src="../static/mainPhoto.jpg" class="rounded-circle mx-auto d-block" alt="Photo" width="250">
             <h5 align="center">Бородін Марія</h5>
             <h6 align="center">m.borodin.1999@gmail.com</h6>
             <p align="center">Судентка</p>
@@ -47,16 +52,17 @@
             </div>
         </div>
 
-        <div class="row blockHeader" align="center">
+        <div class="row blockHeader">
             <div class="col text-left">
                 <em>Фотографії з різним настроєм</em>
             </div>
         </div>
+        <hr/>
 
         <div class="row" align="center">
             <div class="col offset-md-1">
                 <div class="card" style="width: 15em">
-                    <img src="static/differentMood/happy.jpg" class="card-img-top" alt="Happy photo">
+                    <img src="../static/differentMood/happy.jpg" class="card-img-top" alt="Happy photo">
                     <div class="card-body">
                         <h6 class="card-text" align="center">Весела</h6>
                     </div>
@@ -64,7 +70,7 @@
             </div>
             <div class="col">
                 <div class="card" style="width: 15em">
-                    <img src="static/differentMood/current.jpg" class="card-img-top" alt="Current photo">
+                    <img src="../static/differentMood/current.jpg" class="card-img-top" alt="Current photo">
                     <div class="card-body">
                         <h6 class="card-text" align="center">В даний момент</h6>
                     </div>
@@ -72,7 +78,7 @@
             </div>
             <div class="col">
                 <div class="card" style="width: 15em">
-                    <img src="static/differentMood/sad.jpg" class="card-img-top" alt="Sad photo">
+                    <img src="../static/differentMood/sad.jpg" class="card-img-top" alt="Sad photo">
                     <div class="card-body">
                         <h6 class="card-text" align="center">Сумна</h6>
                     </div>
@@ -81,14 +87,15 @@
             <div class="col-md-1"></div>
         </div>
 
-        <div class="row blockHeader" align="center">
+        <div class="row blockHeader">
             <div class="col text-left">
                 <em>Мої оцінки</em>
             </div>
         </div>
+        <hr/>
 
         <div class="row" align="center">
-            <table class="col-md-10 offset-md-1 table table-bordered">
+            <table class="col-md-10 offset-md-1 table">
                 <thead>
                 <tr>
                     <th scope="col">Предмет</th>
@@ -136,16 +143,17 @@
             </table>
         </div>
 
-        <div class="row blockHeader" align="center">
+        <div class="row blockHeader">
             <div class="col text-left">
                 <em>Улюблені фільми</em>
             </div>
         </div>
+        <hr/>
 
         <div class="row" align="center">
             <div class="col">
                 <a href="https://www.imdb.com/title/tt0903747/" class="card" style="width: 18em">
-                    <img src="static/films/breaking-bad.jpg" class="card-img-top" alt="Breaking Bad (постер)">
+                    <img src="../static/films/breaking-bad.jpg" class="card-img-top" alt="Breaking Bad (постер)">
                     <div class="card-body">
                         <h6 class="card-text" align="center">Breaking Bad</h6>
                     </div>
@@ -153,7 +161,7 @@
             </div>
             <div class="col">
                 <a href="https://www.imdb.com/title/tt0475784/?ref_=fn_al_tt_1" class="card" style="width: 18em">
-                    <img src="static/films/westworld.jpg" class="card-img-top" alt="Westworld (постер)">
+                    <img src="../static/films/westworld.jpg" class="card-img-top" alt="Westworld (постер)">
                     <div class="card-body">
                         <h6 class="card-text" align="center">Westworld</h6>
                     </div>
@@ -161,7 +169,7 @@
             </div>
             <div class="col">
                 <a href="https://www.imdb.com/title/tt0108778/?ref_=nv_sr_1?ref_=nv_sr_1" class="card" style="width: 18em">
-                    <img src="static/films/Friends.jpg" class="card-img-top" alt="Friends (постер)">
+                    <img src="../static/films/Friends.jpg" class="card-img-top" alt="Friends (постер)">
                     <div class="card-body">
                         <h6 class="card-text" align="center">Friends</h6>
                     </div>
@@ -172,7 +180,7 @@
         <div class="row" align="center">
             <div class="col">
                 <a href="https://www.imdb.com/title/tt1431045/?ref_=nv_sr_2?ref_=nv_sr_2" class="card" style="width: 18em">
-                    <img src="static/films/Deadpool.png" class="card-img-top" alt="Deadpool (постер)">
+                    <img src="../static/films/Deadpool.png" class="card-img-top" alt="Deadpool (постер)">
                     <div class="card-body">
                         <h6 class="card-text" align="center">Deadpool</h6>
                     </div>
@@ -180,7 +188,7 @@
             </div>
             <div class="col">
                 <a href="https://www.imdb.com/title/tt3606888/?ref_=fn_al_tt_1" class="card" style="width: 18em">
-                    <img src="static/films/catBob.jpg" class="card-img-top" alt="Уличный кот по кличке Боб (постер)">
+                    <img src="../static/films/catBob.jpg" class="card-img-top" alt="Уличный кот по кличке Боб (постер)">
                     <div class="card-body">
                         <h6 class="card-text" align="center">Уличный кот по кличке Боб</h6>
                     </div>
@@ -188,7 +196,7 @@
             </div>
             <div class="col">
                 <a href="https://www.imdb.com/title/tt0120586/?ref_=fn_al_tt_1" class="card" style="width: 18em">
-                    <img src="static/films/americanHistoryX.jpg" class="card-img-top" alt="American History X">
+                    <img src="../static/films/americanHistoryX.jpg" class="card-img-top" alt="American History X">
                     <div class="card-body">
                         <h6 class="card-text" align="center">American History X</h6>
                     </div>
@@ -196,29 +204,30 @@
             </div>
         </div>
 
-        <div class="row blockHeader" align="center">
+        <div class="row blockHeader">
             <div class="col text-left">
                 <em>Мій дім</em>
             </div>
         </div>
+        <hr/>
 
         <div class="row">
-            <button class="controls" id="previous">&lt;</button>
-            <button class="controls" id="pause">&#10074;&#10074;</button>
-            <button class="controls" id="next">&gt;</button>
+            <button class="controls fa fa-chevron-left" id="previous"></button>
+            <button class="controls fa fa-pause" id="pause"></button>
+            <button class="controls fa fa-chevron-right" id="next"></button>
         </div>
 
         <div class="row">
             <div class="col-md-5">
                 <ul id="slides">
-                    <li class="slide showing"><img src="static/myHome/IMG_20180407_153852.jpg" alt="My home"></li>
-                    <li class="slide"><img src="static/myHome/IMG_20180801_205658.jpg" alt="My home"></li>
-                    <li class="slide"><img src="static/myHome/photo_2017-07-20_15-35-32.jpg" alt="My home"></li>
-                    <li class="slide"><img src="static/myHome/photo_2017-07-20_15-35-42.jpg" alt="My home"></li>
-                    <li class="slide"><img src="static/myHome/photo_2018-01-11_12-17-59.jpg" alt="My home"></li>
-                    <li class="slide"><img src="static/myHome/photo_2018-01-20_16-44-21.jpg" alt="My home"></li>
-                    <li class="slide"><img src="static/myHome/photo_2018-07-23_11-49-57.jpg" alt="My home"></li>
-                    <li class="slide"><img src="static/myHome/photo2122.jpg" alt="My home"></li>
+                    <li class="slide showing"><img src="../static/myHome/IMG_20180407_153852.jpg" alt="My home"></li>
+                    <li class="slide"><img src="../static/myHome/IMG_20180801_205658.jpg" alt="My home"></li>
+                    <li class="slide"><img src="../static/myHome/photo_2017-07-20_15-35-32.jpg" alt="My home"></li>
+                    <li class="slide"><img src="../static/myHome/photo_2017-07-20_15-35-42.jpg" alt="My home"></li>
+                    <li class="slide"><img src="../static/myHome/photo_2018-01-11_12-17-59.jpg" alt="My home"></li>
+                    <li class="slide"><img src="../static/myHome/photo_2018-01-20_16-44-21.jpg" alt="My home"></li>
+                    <li class="slide"><img src="../static/myHome/photo_2018-07-23_11-49-57.jpg" alt="My home"></li>
+                    <li class="slide"><img src="../static/myHome/photo2122.jpg" alt="My home"></li>
                 </ul>
                 <script src="js/SlideShow.js"></script>
             </div>
@@ -243,6 +252,7 @@
             </div>
         </div>
 
+        <hr/>
         <footer class="row">
             <div class="col text-right">
                 Автор: Бородін Марія
